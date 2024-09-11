@@ -33,3 +33,10 @@ noteContainer.addEventListener('click', (e) => {
     })
   }
 })
+
+document.addEventListener('keydown', e => {
+  if(e.key === "Enter"){
+    document.execCommand(insertLineBreak);
+    e.preventDefault()
+    }
+})
